@@ -15,5 +15,8 @@ public class Main {
 
         w1.printFields();
         windows[0].printFields();
+
+        MyWindow w6 = new MyWindow();
+        w6.printFields();
     }
 }

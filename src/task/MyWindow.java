@@ -15,6 +15,13 @@ public class MyWindow {
         this.opened = opened;
     }
 
+    public MyWindow() {
+        width = 1;
+        height = 2;
+        numberOfGlass = 0;
+        color = "blue";
+    }
+
     public double getWidth() {
         return width;
     }
