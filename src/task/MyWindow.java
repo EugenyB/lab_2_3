@@ -16,11 +16,29 @@ public class MyWindow {
     }
 
     public MyWindow() {
-        width = 1;
-        height = 2;
-        numberOfGlass = 0;
-        color = "blue";
+        this(1,2,0,"blue",false);
+//        width = 1;
+//        height = 2;
+//        numberOfGlass = 0;
+//        color = "blue";
     }
+
+    public MyWindow(double width, double height) {
+        this();
+        this.width = width;
+        this.height = height;
+    }
+
+    public MyWindow(double width, double height, int numberOfGlass) {
+        this(width, height);
+        this.numberOfGlass = numberOfGlass;
+    }
+//    public MyWindow(double width, double height, int numberOfGlass) {
+//        this();
+//        this.width = width;
+//        this.height = height;
+//        this.numberOfGlass = numberOfGlass;
+//    }
 
     public double getWidth() {
         return width;
